@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<script type="text/javascript">
+		let tipo = true
+
+		function hello (name) {
+			let res;
+			tipo = !tipo
+			let heading = document.querySelector ('h1');
+			
+			(tipo) ? res="Hello": res="Goodbye!";
+
+			heading.innerHTML = res + " "+name+"!!!"
+		}
+
+
+	</script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<button onclick="hello('Eugenio')">Click Here</button>
+</body>
+</html>

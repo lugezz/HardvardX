@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flights</title>
+</head>
+<body>
+	<h1>Flights</h1>
+	<ul>
+	{% for flight in flights  %}
+		<li><a href="{{ flight.get_absolute_url }}">Vuelo {{ flight.id }}</a>: From {{flight.origin}} to {{flight.destination}}</li>
+	{% endfor  %}
+	</ul>
+</body>
+</html>
